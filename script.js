@@ -30,7 +30,7 @@ function game(){
     for (let i = 1; i <= 5; i++){
         playerSelection = prompt("Rock, Paper, or Scissors? ").toLowerCase();
         computerSelection = getComputerChoice();
-        let x = String(playRound(playerSelection, computerSelection));
+        let x = playRound(playerSelection, computerSelection);
 
         if (x == "win"){
             playerScore += 1;
